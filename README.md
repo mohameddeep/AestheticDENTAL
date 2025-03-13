@@ -8,19 +8,19 @@ Patient: Accesses personal medical records and schedules appointments.
 
 
 Key Features:
-Services: doctor introduce many service and patient will book one of them
-Appointment Management: Facilitates scheduling and tracking of patient appointments.
-Patient Records: Allows creation of PDF reports detailing general medical information and specific reservation details.
+    Services: doctor introduce many service and patient will book one of them
+    Appointment Management: Facilitates scheduling and tracking of patient appointments.
+    Patient Records: Allows creation of PDF reports detailing general medical information and specific reservation details.
 
 
 Technologies Used:
-Laravel 10
-PHP 8.1
-MySQL Database
+    Laravel 10
+    PHP 8.1
+    MySQL Database
 
 
 
 Installed Packages:
-sanctum
-spatie permission
-spatie translation
+    sanctum
+    spatie permission
+    spatie translation
