@@ -1,4 +1,4 @@
-name: auto deploy to hafez.azq1.com
+name: auto deploy to api.aestheticdental.org
 on:
   push:
     branches:
