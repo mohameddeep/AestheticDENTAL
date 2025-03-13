@@ -1,0 +1,21 @@
+name: auto deploy to hafez.azq1.com
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Deploy on push to master
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands to pull from main branch to staging
+      uses: appleboy/ssh-action@v0.1.10
+      with:
+        server: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.password }}
+        script: |
+          cd api
+          export PATH=/opt/cpanel/ea-php81/root/bin:$PATH
+          rm composer.lock
+          git pull origin master
